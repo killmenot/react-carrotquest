@@ -1,0 +1,8 @@
+dist
+coverage
+node_modules
+*.lock
+*.log
+*.sublime-*
+package-lock.json
+

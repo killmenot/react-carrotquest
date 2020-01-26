@@ -1,0 +1,57 @@
+{
+  "name": "react-carrotquest-module",
+  "version": "1.0.0",
+  "description": "React CarrotQuest Manager Module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "jest": "jest",
+    "test": "npm run lint && npm run jest",
+    "build": "babel src -d dist --ignore src/__tests__",
+    "prepublish": "npm run build"
+  },
+  "author": "Alexey Kucherenko <alexei.kucherenko@gmail.com>",
+  "homepage": "https://github.com/killmenot/react-carrotquest",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/killmenot/react-carrotquest"
+  },
+  "bugs": {
+    "url": "https://github.com/killmenot/react-carrotquest/issues"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "carrotquest",
+    "carrot",
+    "quest"
+  ],
+  "peerDependencies": {
+    "react": "^16.12.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "enzyme": "^3.11.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0",
+    "react": "^16.12.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.12.0",
+    "sinon": "^8.1.1"
+  },
+  "jest": {
+    "testRegex": "__tests__.*\\.spec.js$",
+    "collectCoverage": true
+  }
+}
